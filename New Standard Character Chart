@@ -1,296 +1,293 @@
 
-The NSCC (New Standard Character Chart) system characters are similar to the ASCII system except for the NSCC's exclusion of most of the command codes and inclusion of the entire greek alphabet, along with the reoganization of the majority of the characters. The character bitmaps will be stored in a .cbm file in the following format:
-(2B 1A start code)(2B 1A end code)[(10B 5A 8x10 bitmap)x(end-start)]
+The NSCII (New Standard Code for Information Interchange) system characters are similar to the ASCII system except for the NSCII's exclusion of most of the command codes and inclusion of the entire greek alphabet, along with the reoganization of the majority of the characters. The character bitmaps will be stored in a .cbm file in the following format:
+
+(16B 8A 8x16 bitmap)x256
 
 Commands
 
 00	null
 01	command start
 02	command end
-03	header start
-04	header end
+03	segment start
+04	segment end
 05	file end
-06	segment end
+06	carriage return
+07	substitute
 
 Punctuation
 
-07	tab
-08	backspace
-09	delete
-0A	new line
-0B	space
-0C	!
-0D	spanish exclamation mark
-0E	?
-0F	spanish question mark
-10	.
-11	,
-12	;
-13	:
-14	"
-15	'
-16	@
-17	&
-18	_
-19	#
+08	tab
+09	backspace
+0A	delete
+0B	new line
+0C	space
+0D	!
+0E	spanish exclamation mark
+0F	?
+10	spanish question mark
+11	.
+12	,
+13	;
+14	:
+15	"
+16	'
+17	@
+18	&
+19	_
+1A	#
 
 Calculation
 
-1A	+
-1B	-
-1C	*
-1D	/
-1E	>
-1F	<
-20	greater than or equal to
-21	less than or equal to
-22	=
-23	^
-24	congruent
-25	not equal to
-26	about equal to
-27	degree
-28	plus and minus
-29	devision
-2A	function
-2B	(
-2C	)
-2D	[
-2E	]
-2F	{
-30	}
-31	|
-32	infinity
-33	derivitive
-34	integral
-35	~
-36	»
-37	«
+1B	%
+1C	+
+1D	-
+1E	*
+1F	/
+20	>
+21	<
+22	greater than or equal to
+23	less than or equal to
+24	=
+25	^
+26	congruent
+27	not equal to
+28	about equal to
+29	degree
+2A	plus and minus
+2B	degree
+2C	(
+2D	)
+2E	[
+2F	]
+30	{
+31	}
+32	|
+33	infinity
+34	derivitive
+35	integral
+36	~
+37	»
+38	«
 
 Numbers
 
-38	0
-39	1
-3A	2
-3B	3
-3C	4
-3D	5
-3E	6
-3F	7
-40	8
-41	9
-42	duodecimal 10
-43	duodecimal 11
+39	0
+3A	1
+3B	2
+3C	3
+3D	4
+3E	5
+3F	6
+40	7
+41	8
+42	9
+43	duodecimal 10
+44	duodecimal 11
 
 Capital Letters
 
-44	A
-45	B
-46	C
-47	D
-48	E
-49	F
-4A	G
-4B	H
-4C	I
-4D	J
-4E	K
-4F	L
-50	M
-51
-	N
-52	O
-53	P
-54	Q
-55	R
-56	S
-57	T
-58	U
-59	V
-5A	W
-5B	X
-5C	Y
-5D	Z
+45	A
+46	B
+47	C
+48	D
+49	E
+4A	F
+4B	G
+4C	H
+4D	I
+4E	J
+4F	K
+50	L
+51	M
+52	N
+53	O
+54	P
+55	Q
+56	R
+57	S
+58	T
+59	U
+5A	V
+5B	W
+5C	X
+5D	Y
+5E	Z
 
 Lowercase Letters
 
-5E	a
-5F 	b
-60	c
-61	d
-62	e
-63	f
-64	g
-65	h
-66	i
-67	j
-68	k
-69	l
-6A	m
-6B	n
-6C	o
-6D	p
-6E	q
-6F	r
-70	s
-71	t
-72	u
-73	v
-74	w
-75	x
-76	y
-77	z
+5F	a
+60 	b
+61	c
+62	d
+63	e
+64	f
+65	g
+66	h
+67	i
+68	j
+69	k
+6A	l
+6B	m
+6C	n
+6D	o
+6E	p
+6F	q
+70	r
+71	s
+72	t
+73	u
+74	v
+75	w
+76	x
+77	y
+78	z
 
 Accents
 
-78	acute
-79	grave
-7A	umlaut
-7B	breve
-7C	ring
-7D	prispomene
-7E	cedilla
-7F	umlaut A
-80	ring A
-81	cedilla C
-82	acute E
-83	prispomene N
-84	umlaut O
-85	umlate U
-86	acute a
-87	grave a
-88	umlaut a
-89	breve a
-8A	ring a
-8B	cedilla c
-8C	acute e
-8D	grave e
-8E	umlaut e
-8F	breve e
-90	acute i
-91	grave i
-92	umlaut i
-93	breve i
-94	acute o
-95	grave o
-96	umlaut o
-97	breve o
-98	prispomene n
-99	acute u
-9A	grave u
-9B	umlaut u
-9C	breve u
-9D	umlaut y
+79	acute
+7A	grave
+7B	diaeresis
+7C	breve
+7D	ring
+7E	perispomeni
+7F	cedilla
+80	diaeresis A
+81	ring A
+82	cedilla C
+83	acute E
+84	perispomeni N
+85	diaeresis O
+86	diaeresis U
+87	acute a
+88	grave a
+89	diaeresis a
+8A	breve a
+8B	ring a
+8C	cedilla c
+8D	acute e
+8E	grave e
+8F	diaeresis e
+90	breve e
+91	acute i
+92	grave i
+93	diaeresis i
+94	breve i
+95	acute o
+96	grave o
+97	diaeresis o
+98	breve o
+99	perispomeni n
+9A	acute u
+9B	grave u
+9C	diaeresis u
+9D	breve u
+9E	diaeresis y
 
 Capital Greek Alphabet
 
-9E	cap alpha
-9F	cap beta
-A0	cap gamma
-A1	cap delta
-A2	cap epsilon
-A3	cap zeta
-A4	cap eta
-A5	cap theta
-A6	cap iota
-A7	cap kappa
-A8	cap lambda
-A9	cap mu
-AA	cap nu
-AB	cap xi
-AC	cap omicron
-AD	cap pi
-AE	cap rho
-AF	cap sigma
-B0	cap tau
-B1	cap upsilon
-B2	cap phi
-B3	cap chi
-B4	cap psi
-B5	cap omega
+9F	cap alpha
+A0	cap beta
+A1	cap gamma
+A2	cap delta
+A3	cap epsilon
+A4	cap zeta
+A5	cap eta
+A6	cap theta
+A7	cap iota
+A8	cap kappa
+A9	cap lambda
+AA	cap mu
+AB	cap nu
+AC	cap xi
+AD	cap omicron
+AE	cap pi
+AF	cap rho
+B0	cap sigma
+B1	cap tau
+B2	cap upsilon
+B3	cap phi
+B4	cap chi
+B5	cap psi
+B6	cap omega
 
 Lowercase Greek Alphabet
 
-B6	alpha
-B7	beta
-B8	gamma
-B9	delta
-BA	epsilon
-BB	zeta
-BC	eta
-BD	theta
-BE	iota
-BF	kappa
-C0	lambda
-C1	mu
-C2	nu
-C3	xi
-C4	omicron
-C5	pi
-C6	rho
-C7	sigma
-C8	tau
-C9	upsilon
-CA	phi
-CB	chi
-CC	psi
-CD	omega
+B7	alpha
+B8	beta
+B9	gamma
+BA	delta
+BB	epsilon
+BC	zeta
+BD	eta
+BE	theta
+BF	iota
+C0	kappa
+C1	lambda
+C2	mu
+C3	nu
+C4	xi
+C5	omicron
+C6	pi
+C7	rho
+C8	sigma
+C9	tau
+CA	upsilon
+CB	phi
+CC	chi
+CD	psi
+CE	omega
 
 Pipes
 
-CE	snsn
-CF	nsns
-D0	dndn
-D1	ndnd
-D2	ssnn
-D3	nssn
-D4	nnss
-D5	snns
-D6	ddnn
-D7	nddn
-D8	nndd
-D9	dnnd
-DA	dsnn
-DB	ndsn
-DC	nnds
-DD	snnd
-DE	sdnn
-DF	nsdn
-E0	nnsd
-E1	dnns
-E2	sssn
-E3	ssns
-E4	snss
-E5	nsss
-E6	dddn
-E7	ddnd
-E8	dndd
-E9	nddd
-EA	sdsn
-EB	dsns
-EC	snsd
-ED	nsds
-EE	dsdn
-EF	sdnd
-F0	dnds
-F1	ndsd
-F2	ssss
-F3	dddd
-F4	sdsd
-F5	dsds
-
-Fillers
-
-F6	filled
-F7	filled botton
-F8	filled top
-F9	filled left
-FA	filled right
+CF	snsn
+D0	nsns
+D1	dndn
+D2	ndnd
+D3	ssnn
+D4	nssn
+D5	nnss
+D6	snns
+D7	ddnn
+D8	nddn
+D9	nndd
+DA	dnnd
+DB	dsnn
+DC	ndsn
+DD	nnds
+DE	snnd
+DF	sdnn
+E0	nsdn
+E1	nnsd
+E2	dnns
+E3	sssn
+E4	ssns
+E5	snss
+E6	nsss
+E7	dddn
+E8	ddnd
+E9	dndd
+EA	nddd
+EB	sdsn
+EC	dsns
+ED	snsd
+EE	nsds
+EF	dsdn
+F0	sdnd
+F1	dnds
+F2	ndsd
+F3	ssss
+F4	dddd
+F5	sdsd
+F6	dsds
+F7	filled
 
 Currency
 
-FB	$
-FC	cent
-FD	british pound
-FE	yen
-FF	euro
+F8	$
+F9	cent
+FA	british pound
+FB	yen
+FC	euro
+FD	ruble
+FE	peso
+FF	pts
