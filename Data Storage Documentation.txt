@@ -1,0 +1,13 @@
+﻿
+══╡The Data Table╞══
+
+The data table stores the location of the data and the name of the file in the form of a string, the first 2bytes being the length of the string and the last length as defined by the previous bytes being the string of characters (2 characters per address). The formating is exemplified below:
+
+(2 B 1 A file location)(2 B 1 A name address #length)(#length*2 B #length A string)
+
+══╡The File╞══
+
+A file as referenced in the data table has 4 parts: the segment size, the header, the body and the segment connecter (or null if no other segments exist). The segment size informs the computer of the length of the current file segment (i.e. the legnth of the current chunk of information before having to redirect to another reference to continue reading or editing). The header of any file contains standard information about the file itself including but not limited to the file type, the author, the date of creation, etc.. The body of any file is not ordered by any standard method, but is usually interpreted by an external program other than the operating system in most circumstances. Finally, at the of any file segment is the reference to the next segment of information or a code that denotes the end of the file.
+
+══╡The Segment╞══
+
