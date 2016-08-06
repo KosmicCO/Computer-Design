@@ -17,6 +17,15 @@ NOT
 AND
 OR
 XOR
+3 Greater Than
+3 Greater Than or Equal To
+3 Gerater Than with Signed
+3 Greater Than or Equal To with Signed
+3 Less Than
+3 Less Than or Equal To
+3 Less Than with Signed
+3 Less Than or Equal To with Signed
+3 Equal To
 4 Bit Shift Rotate Left
 4 Bit Shift Rotate Right
 4 Bit Shift Rotate through Carry Left
@@ -38,15 +47,5 @@ Square Root
 NAND
 NOR
 XNOR
-3 Greater Than
-3 Greater Than or Equal To
-3 Gerater Than with Signed
-3 Greater Than or Equal To with Signed
-3 Less Than
-3 Less Than or Equal To
-3 Less Than with Signed
-3 Less Than or Equal To with Signed
-3 Equal To
-Equal To
 
 Note: The numbers before some of the operations indicate that the group of operations uses the same space architecturally.
