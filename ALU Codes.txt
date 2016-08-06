@@ -1,0 +1,52 @@
+Codes to Implement in the ALU
+
+==Combinational Logic Codes==
+
+-Arithmetical-
+
+1 Addition
+1 Addition with Carry
+1 Increment
+2 Subtraction
+2 Subtraction with Borrow
+2 Decrement
+
+-Logical-
+
+NOT
+AND
+OR
+XOR
+4 Bit Shift Rotate Left
+4 Bit Shift Rotate Right
+4 Bit Shift Rotate through Carry Left
+4 Bit Shift Rotate through Carry Right
+4 Bit Shift Logical Left
+4 Bit Shift Logical Right
+4 Bit Shift Arithmatic Right
+
+==Sequential Logic Codes==
+
+-Arithmetical-
+
+Multiplication
+Division
+Square Root
+
+-Logical-
+
+NAND
+NOR
+XNOR
+3 Greater Than
+3 Greater Than or Equal To
+3 Gerater Than with Signed
+3 Greater Than or Equal To with Signed
+3 Less Than
+3 Less Than or Equal To
+3 Less Than with Signed
+3 Less Than or Equal To with Signed
+3 Equal To
+Equal To
+
+Note: The numbers before some of the operations indicate that the group of operations uses the same space architecturally.
