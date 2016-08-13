@@ -1,0 +1,92 @@
+Null
+
+Add (EX)
+-# # A
+
+Increment
+-# A
+
+Subtract (EX)
+-# # A
+
+Decrement
+-# A
+
+Multiply
+-# # A
+
+Divide
+-# # A
+
+Modulate
+-# # A
+
+AND
+-# # A
+
+OR
+-# # A
+
+XOR
+-# # A
+
+NOT
+-# A
+
+NAND
+-# # A
+
+NOR
+-# # A
+
+XNOR
+-# # A
+
+Rotate Right Shift
+-# A
+
+Rotate Left Shift
+-# A
+
+Through EX Right Shift
+-# A
+
+Through EX Left Shift
+-# A
+
+Logical Right Shift
+-# A
+
+Logical Left Shift
+-# A
+
+Arithmetic Right Shift
+-# A
+
+Greater Than (EX, TC)
+-# # A
+
+Greater Than or Equal To (TC)
+-# # A
+
+Less Than (EX, TC)
+-# # A
+
+Less Than or Equal To (TC)
+-# # A
+
+Equal To (EX)
+-# # A
+
+Not Equal To (EX)
+-# # A
+
+Assign
+-# A
+
+
+
+
+
+
+
