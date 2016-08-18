@@ -1,87 +1,104 @@
-Null
+-|Registers|-
 
-Add (EX)
--# # A
+Program Pointer           PP    16 Bit
+Stack Pointer             SP    16 Bit
+Peripheral Channel        PC    16 Bit
+Peripheral Set            PS    16 Bit
+Peripheral Interrupt      PI    1 Bit
+Appended Arithmetic       AA    1 Bit
+Appended Logic            AL    1 Bit
+Multi-Step Operation      MO    16 Bit
 
-Increment
+-|Opcodes|-
+
+Null                                        --00000000000000
+
+Add (AA)                                    ##00000000000001
+-# # A                                      ##00000000000010  AA
+
+Increment                                   #-00000000000011
 -# A
 
-Subtract (EX)
--# # A
+Subtract (AA)                               ##00000000000100
+-# # A                                      ##00000000000101  AA
 
-Decrement
+Decrement                                   #-00000000000110
 -# A
 
-Multiply
+Multiply                                    ##00000000000111
 -# # A
 
-Divide
+Divide                                      ##00000000001000
 -# # A
 
-Modulate
+Modulate                                    ##00000000001001
 -# # A
 
-AND
+AND                                         ##00000000001010
 -# # A
 
-OR
+OR                                          ##00000000001011
 -# # A
 
-XOR
+XOR                                         ##00000000001100
 -# # A
 
-NOT
+NOT                                         #-00000000001101
 -# A
 
-NAND
+NAND                                        ##00000000001110
 -# # A
 
-NOR
+NOR                                         ##00000000001111
 -# # A
 
-XNOR
+XNOR                                        ##00000000010000
 -# # A
 
-Rotate Right Shift
+Rotate Right Shift                          #-00000000010001
 -# A
 
-Rotate Left Shift
+Rotate Left Shift                           #-00000000010010
 -# A
 
-Through EX Right Shift
+Through AA Right Shift                      #-00000000010011
 -# A
 
-Through EX Left Shift
+Through AA Left Shift                       #-00000000010100
 -# A
 
-Logical Right Shift
+Logical Right Shift                         #-00000000010101
 -# A
 
-Logical Left Shift
+Logical Left Shift                          #-00000000010110
 -# A
 
-Arithmetic Right Shift
+Arithmetic Right Shift                      #-00000000010111
 -# A
 
-Greater Than (EX, TC)
--# # A
+Greater Than (AL, TC)                       ##00000000011000
+-# # A                                      ##00000000011001  AL
+                                            ##00000000011010  TC
+                                            ##00000000011011  AL TC
 
-Greater Than or Equal To (TC)
--# # A
+Greater Than or Equal To (TC)               ##00000000011100
+-# # A                                      ##00000000011101  TC
 
-Less Than (EX, TC)
--# # A
+Less Than (AL, TC)                          ##00000000011110
+-# # A                                      ##00000000011111  AL
+                                            ##00000000100000  TC
+                                            ##00000000100001  AL TC
 
-Less Than or Equal To (TC)
--# # A
+Less Than or Equal To (TC)                  ##00000000100010
+-# # A                                      ##00000000100011  TC
 
-Equal To (EX)
--# # A
+Equal To (AL)                               ##00000000100100
+-# # A                                      ##00000000100101  AL
 
-Not Equal To (EX)
--# # A
+Not Equal To (AL)                           ##00000000100110
+-# # A                                      ##00000000100111  AL
 
-Assign
+Assign                                      #-00000000101000
 -# A
 
 
