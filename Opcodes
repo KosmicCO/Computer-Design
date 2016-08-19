@@ -1,25 +1,25 @@
 -|Registers|-
 
-|-----------------------|----|--------|---------|
-|     Register Name     |Abbv|  Size  |Assn-able|
-|-----------------------|----|--------|---------|
-| Program Pointer       | PP | 16 Bit |  Yes    |
-| Stack Pointer         | SP | 16 Bit |  Yes    |
-| Ram Pointer           | RP | 16 Bit |  Yes    |
-| Current Instruction   | CI | 16 Bit |  No     |
-| Current Input #1      | I1 | 16 Bit |  No     |
-| Current Input #2      | I2 | 16 Bit |  No     |
-| Current Input #3      | I3 | 16 Bit |  No     |
-| Peripheral Channel    | PC | 16 Bit |  Yes    |
-| Peripheral Set        | PS | 16 Bit |  Yes    |
-| Peripheral Interrupt  | PI | 1  Bit |  Only 0 |
-| Appended Arithmetic   | AA | 1  Bit |  Yes    |
-| Appended Logic        | AL | 1  Bit |  Yes    |
-| Operation Buffer      | OB | 16 Bit |  Yes    |
-| Current Time #1       | T1 | 16 Bit |  No     |
-| Current Time #2       | T2 | 16 Bit |  No     |
-| Current Time #3       | T3 | 16 Bit |  No     |
-|-----------------------|----|--------|---------|
+|-----------------------|----|--------|--------|
+|     Register Name     |Abbv|  Size  |Asn-able|
+|-----------------------|----|--------|--------|
+| Program Pointer       | PP | 16 Bit | Yes    |
+| Stack Pointer         | SP | 16 Bit | Yes    |
+| Ram Pointer           | RP | 16 Bit | Yes    |
+| Current Instruction   | CI | 16 Bit | No     |
+| Current Input #1      | I1 | 16 Bit | No     |
+| Current Input #2      | I2 | 16 Bit | No     |
+| Current Input #3      | I3 | 16 Bit | No     |
+| Peripheral Channel    | PC | 16 Bit | Yes    |
+| Peripheral Set        | PS | 16 Bit | Yes    |
+| Peripheral Interrupt  | PI | 1  Bit | Only 0 |
+| Appended Arithmetic   | AA | 1  Bit | Yes    |
+| Appended Logic        | AL | 1  Bit | Yes    |
+| Operation Buffer      | OB | 16 Bit | Yes    |
+| Current Time #1       | T1 | 16 Bit | No     |
+| Current Time #2       | T2 | 16 Bit | No     |
+| Current Time #3       | T3 | 16 Bit | No     |
+|-----------------------|----|--------|--------|
 
 -|Opcodes|-
 
